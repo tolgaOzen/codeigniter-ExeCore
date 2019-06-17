@@ -280,6 +280,7 @@ Array
 
 ### data type logic
 
+If you type /:json at the end of the path, the data arriving on the page returns json
 #### json
 ```
 https://.../:json
@@ -298,6 +299,7 @@ example : "db": {
      
 ```    
 #### array
+If you type /:array at the end of the path, the data arriving on the page returns array
 ```   
 https://.../:array            
        
@@ -315,6 +317,7 @@ https://.../:array
                    .
    
 ```  
+Each controller extend from Exe_Controller works the same way
 
 #### page details and user details     
 ```               
