@@ -355,7 +355,7 @@ income on every page : "pageDetails": {
 ###### example
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/39353278/59631169-d98f4580-914f-11e9-9e64-dabd86473aff.jpg" alt="confetti" width="619" height="491">
+<img src="https://user-images.githubusercontent.com/39353278/59631169-d98f4580-914f-11e9-9e64-dabd86473aff.jpg" alt="confetti" width="754" height="887">
 </p>
 
 ```
