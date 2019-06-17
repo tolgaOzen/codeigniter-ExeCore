@@ -1,5 +1,5 @@
 # codeigniter-ExeCore
-#### Codeigniter Easy To Use Controller And Model Core
+#### Use of controller and model core to simplify Codeigniter usage
 
 
 ![language](https://img.shields.io/badge/language-php-%238892BF.svg)
