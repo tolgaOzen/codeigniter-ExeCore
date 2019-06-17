@@ -1,9 +1,8 @@
 #codeigniter-ExeCore
-Codeigniter Easy To Use Controller And Model Core
+####Codeigniter Easy To Use Controller And Model Core
 
 
 ![language](https://img.shields.io/badge/Language-php-%238892BF.svg)
-[![License](https://img.shields.io/cocoapods/l/SwiftConfettiView.svg?style=flat)](https://cocoapods.org/pods/SwiftConfettiView)
 
 
 ## setup
