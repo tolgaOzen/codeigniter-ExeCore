@@ -1,9 +1,11 @@
 #codeigniter-ExeCore
-####Codeigniter Easy To Use Controller And Model Core
+### Codeigniter Easy To Use Controller And Model Core
 
 
-![language](https://img.shields.io/badge/Language-php-%238892BF.svg)
-
+![language](https://img.shields.io/badge/language-php-%238892BF.svg)
+![GitHub](https://img.shields.io/github/license/tolgaOzen/codeigniter-ExeCore.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/tolgaOzen/codeigniter-ExeCore.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/tolgaOzen/codeigniter-ExeCore.svg)
 
 ## setup
 - Download and open codeigniter https://www.codeigniter.com
