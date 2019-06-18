@@ -43,7 +43,7 @@ installation is over
 
 
 ## usage
-```
+```php
        /*
        |--------------------------------------------------------------------------
        | _remap
@@ -75,7 +75,7 @@ installation is over
 
 
 ### Controller Example
-```
+```php
 class Customers extends Exe_Controller
 {
 
@@ -99,9 +99,8 @@ class Customers extends Exe_Controller
 ```
 
 ##### index example Customers controller
-```
+```php
 
-   
     public function index()
     {
         $customers = $this->Customers_Model->getList();
@@ -113,32 +112,29 @@ class Customers extends Exe_Controller
 
 }
 ```
-```
+```php
   $this->loadModel() 
 ```
   loads the model with the same name whatever the controller name
  
-```
+```php
  $this->setTitle("customers")
 ```
  html title
-```
+```php
   $this->loadModels(array("Customer_Addresses"))
 ```
   extra model loads
   
-```
+```php
   $this->loadHelpers(array('form', "url"))
 ```
   load helpers
   
-```
+```php
     $this->loadLibraries(array('form_validation'))
 ```
    load libraries
-
-
-
 
 
 
@@ -224,7 +220,7 @@ Array
 
 
 ### Model Example
-```
+```php
 
 class Customers_Model extends Exe_Model
 {
@@ -239,7 +235,7 @@ class Customers_Model extends Exe_Model
     .
     .
 ```
-```
+```php
     /*
     |--------------------------------------------------------------------------
     | getList
@@ -261,7 +257,7 @@ class Customers_Model extends Exe_Model
     }
 ```
 ##### getList Function example return
-```
+```php
  $this->tableName = "customers";
 ```
 ```
@@ -283,7 +279,7 @@ Array
         .
 ```
 ##### getSpecialOwnIdArray used function return
-```
+```php
   $this->tableName = "customers";
   $this->specialKey = "c_";
 ```
@@ -309,7 +305,7 @@ Array
 
 
 ### Child Table Model Example
-```
+```php
 class Customer_Addresses_Model extends Exe_Model
 {
 
@@ -325,7 +321,7 @@ class Customer_Addresses_Model extends Exe_Model
     .
     .
 ```
-```
+```php
     .
     . 
     . 
@@ -376,19 +372,20 @@ If you type /:json at the end of the path, the data arriving on the page returns
 #### json
 ```
 https://.../:json
+```
 
-example : "db": {
-            "customers": {
-              "example_24": {
-                "example_id": "24",
-                "example_update_date": "31-05-2019",
-                "example_hash": "955a3ca1a08e101ba55d19871ad5144e"
-              }
-            },
-            .
-            .
-            .
-     
+```json
+         {
+           "db": {
+             "customers": {
+               "example_24": {
+                 "example_id": "24",
+                 "example_update_date": "31-05-2019",
+                 "example_hash": "955a3ca1a08e101ba55d19871ad5144e"
+               }
+             }
+           }
+         }
 ```    
 #### array
 If you type /:array at the end of the path, the data arriving on the page returns array
