@@ -10,6 +10,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/tolgaOzen/codeigniter-ExeCore.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/tolgaOzen/codeigniter-ExeCore.svg)
 
+---
 
 ## setup
 
@@ -36,7 +37,6 @@ $autoload['helper'] = array('exe_helper' , 'url' , 'text' , 'inflector');
 and do it like this.
 
 installation is over
-
 
 ---
 
@@ -375,7 +375,7 @@ Array
 ### data type logic
 
 
-> ####json
+> json
 
 If you type /:json at the end of the path, the data arriving on the page returns json
 
@@ -414,7 +414,7 @@ https://example.com/Customers/index/:json
 ```    
 
 
-> ####array
+> array
 
 If you type /:array at the end of the path, the data arriving on the page returns array
 ```
@@ -503,7 +503,6 @@ Each controller extend from Exe_Controller works the same way
 
 >If you want to add a special item to the page you can do as in Customers/index
 
----
 
 ## Author
 
@@ -511,7 +510,6 @@ Each controller extend from Exe_Controller works the same way
 
 >mtolgaozen@gmail.com
 
----
 
 ## License
 
@@ -536,5 +534,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
