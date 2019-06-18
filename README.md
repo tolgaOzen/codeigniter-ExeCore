@@ -1,10 +1,6 @@
 
 #codeigniter-ExeCore
 
----
----
----
-
 #### Use of controller and model core to simplify Codeigniter usage
 
 
@@ -43,6 +39,7 @@ installation is over
 
 
 
+
 ## usage
 ```php
        /*
@@ -75,6 +72,8 @@ installation is over
 
 
 
+
+
 ### Controller Example
 ```php
 class Customers extends Exe_Controller
@@ -98,6 +97,8 @@ class Customers extends Exe_Controller
     }
   
 ```
+
+
 
 ##### index example Customers controller
 ```php
@@ -139,7 +140,11 @@ $this->loadLibraries(array('form_validation'))
 
 
 
+
+
 ### readyToUpdate and readyToInsert functions
+
+
 ####usage example
 ```php
  if (isPost()) {
@@ -215,6 +220,7 @@ Array
 
 
 
+
 ### Model Example
 ```php
 
@@ -250,6 +256,8 @@ class Customers_Model extends Exe_Model
         return $this->getSpecialOwnIdArray($customerList);
     }
 ```
+
+
 ##### getList Function example return
 ```php
  $this->tableName = "customers";
@@ -271,6 +279,8 @@ Array
         .
         .
 ```
+
+
 ##### getSpecialOwnIdArray used function return
 ```php
   $this->tableName = "customers";
@@ -312,6 +322,8 @@ class Customer_Addresses_Model extends Exe_Model
     .
     .
 ```
+
+
 ```php
     . 
     . 
@@ -328,6 +340,8 @@ class Customer_Addresses_Model extends Exe_Model
     }
 
 ```
+
+
 ##### getSpecialOwnIdAndParentIdArray used function return
 ```
 Array
@@ -357,6 +371,7 @@ Array
 ```
 
 ### data type logic
+
 
 > ####json
 
@@ -396,13 +411,14 @@ https://example.com/Customers/index/:json
 
 ```    
 
+
 > ####array
 
 If you type /:array at the end of the path, the data arriving on the page returns array
 ```
 https://example.com/Customers/index/:array
 ```
-```   
+```
 
 Array(
      [db] => Array(
