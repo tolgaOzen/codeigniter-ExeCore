@@ -1,5 +1,10 @@
-# codeigniter-ExeCore
+
+#codeigniter-ExeCore
+
+
 #### Use of controller and model core to simplify Codeigniter usage
+
+---
 
 
 ![language](https://img.shields.io/badge/language-php-%238892BF.svg)
@@ -7,7 +12,9 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/tolgaOzen/codeigniter-ExeCore.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/tolgaOzen/codeigniter-ExeCore.svg)
 
+
 ## setup
+
 - Download and open codeigniter https://www.codeigniter.com
 
 - Open application/core folder and Exe_Controller , Exe_Model paste it (our core file).
@@ -31,6 +38,9 @@ $autoload['helper'] = array('exe_helper' , 'url' , 'text' , 'inflector');
 and do it like this.
 
 installation is over
+
+
+
 
 ## usage
 ```
@@ -126,6 +136,88 @@ class Customers extends Exe_Controller
     $this->loadLibraries(array('form_validation'))
 ```
    load libraries
+
+
+
+
+
+
+
+### readyToUpdate and readyToInsert functions
+#####usage example
+```php
+ if (isPost()) {
+
+    $postData = $this->input->post();
+    $readyUpdateData = $this->readyToUpdate($postData[dataBaseOperationType::update]);
+            
+    .
+    .
+    .
+```
+##### before
+```
+Array
+(
+    [update] => Array
+        (
+            [customers] => Array
+                (
+                    [c_24] => Array
+                        (
+                            [customer_name] => 3 NOLU AUTOPİA YÖNETİM HİZMETLERİ İNŞAAT SAN.VE TİC.A.Ş
+                            [customer_id] => 24
+                        )
+
+                )
+
+            [customer_addresses] => Array
+                (
+                    [ca_62] => Array
+                        (
+                            [customer_address_id] => 62
+                            [customer_address_value] => asdasdsadasdsad
+                        )
+
+                )
+
+        )
+
+)
+```
+
+
+##### after
+```
+Array
+(
+    [customers] => Array
+        (
+            [c_24] => Array
+                (
+                    [customer_name] => 3 NOLU AUTOPİA YÖNETİM HİZMETLERİ İNŞAAT SAN.VE TİC.A.Ş
+                    [customer_id] => 24
+                    [customer_update_date] => 2019-06-18 19:38:04
+                    [customer_hash] => 955a3ca1a08e101ba55d19871ad5144e // md5
+                )
+
+        )
+
+    [customer_addresses] => Array
+        (
+            [ca_62] => Array
+                (
+                    [customer_address_id] => 62
+                    [customer_address_value] => asdasdsadasdsad
+                    [customer_address_update_date] => 2019-06-18 19:38:04
+                    [customer_address_hash] => e020369202986c0955a68241db909142 // md5
+                )
+
+        )
+
+)
+```
+
 
 
 
@@ -347,7 +439,7 @@ income on every page : "pageDetails": {
 ###### example
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/39353278/59629755-3852c000-914c-11e9-9696-c12585f46104.jpg" alt="confetti" width="619" height="491">
+<img src="https://user-images.githubusercontent.com/39353278/59700564-3cd6b180-91fc-11e9-8862-c738487ac15d.jpg" alt="confetti" width="783" height="633">
 </p>
 
 
@@ -358,7 +450,7 @@ income on every page : "pageDetails": {
 ###### example
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/39353278/59631169-d98f4580-914f-11e9-9e64-dabd86473aff.jpg" alt="confetti" width="754" height="887">
+<img src="https://user-images.githubusercontent.com/39353278/59700682-8921f180-91fc-11e9-8452-50eddb10046b.jpg" alt="confetti" width="641" height="568">
 </p>
 
 ```
