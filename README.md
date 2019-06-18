@@ -3,7 +3,7 @@
 
 #### Use of controller and model core to simplify Codeigniter usage
 
----
+
 
 ![language](https://img.shields.io/badge/language-php-%238892BF.svg)
 ![GitHub](https://img.shields.io/github/license/tolgaOzen/codeigniter-ExeCore.svg)
@@ -38,7 +38,7 @@ and do it like this.
 installation is over
 
 
-
+---
 
 
 ## usage
@@ -371,6 +371,7 @@ Array
         
 ```
 
+
 ### data type logic
 
 
@@ -502,11 +503,15 @@ Each controller extend from Exe_Controller works the same way
 
 >If you want to add a special item to the page you can do as in Customers/index
 
+---
+
 ## Author
 
 >Tolga Özen
 
 >mtolgaozen@gmail.com
+
+---
 
 ## License
 
@@ -531,3 +536,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
