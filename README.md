@@ -65,12 +65,12 @@ installation is over
        }
   
 ```
-   If session does not exist, type which page to open - change redirect("/SignIn");
+   >If session does not exist, type which page to open - change redirect("/SignIn");
    If there is session, type which page to open - change redirect("/Dashboard");
 ```
    public $pagesWithoutSessionControl = array("SignIn", "SignUp");
 ```
-  If you do not want session control on the page you can add $pagesWithoutSessionControl
+  >If you do not want session control on the page you can add $pagesWithoutSessionControl
 
 
 
@@ -95,7 +95,7 @@ class Customers extends Exe_Controller
 
         $this->loadLibraries(array('form_validation'));
     }
-    
+  
 ```
 
 ##### index example Customers controller
@@ -110,37 +110,36 @@ class Customers extends Exe_Controller
         $this->render();
     }
 
-}
 ```
 ```php
-  $this->loadModel() 
+$this->loadModel() 
 ```
-  loads the model with the same name whatever the controller name
+>loads the model with the same name whatever the controller name
  
 ```php
- $this->setTitle("customers")
+$this->setTitle("customers")
 ```
- html title
+>html title
 ```php
-  $this->loadModels(array("Customer_Addresses"))
+$this->loadModels(array("Customer_Addresses"))
 ```
-  extra model loads
+>extra model loads
   
 ```php
-  $this->loadHelpers(array('form', "url"))
+$this->loadHelpers(array('form', "url"))
 ```
-  load helpers
+>load helpers
   
 ```php
-    $this->loadLibraries(array('form_validation'))
+$this->loadLibraries(array('form_validation'))
 ```
-   load libraries
+>load libraries
 
 
 
 
 ### readyToUpdate and readyToInsert functions
-#####usage example
+####usage example
 ```php
  if (isPost()) {
 
@@ -216,9 +215,6 @@ Array
 
 
 
-
-
-
 ### Model Example
 ```php
 
@@ -231,9 +227,7 @@ class Customers_Model extends Exe_Model
         $this->tableName = "customers";
         $this->specialKey = "c_";
     }
-    .
-    .
-    .
+
 ```
 ```php
     /*
@@ -368,10 +362,12 @@ Array
 
 ### data type logic
 
+> **json**
+
 If you type /:json at the end of the path, the data arriving on the page returns json
-#### json
+
 ```
-https://.../:json
+https://example.com/Customers/index/:json
 ```
 
 ```json
@@ -383,27 +379,34 @@ https://.../:json
                  "example_update_date": "31-05-2019",
                  "example_hash": "955a3ca1a08e101ba55d19871ad5144e"
                }
-             }
+             },
+             .
+             .
+             .
            }
          }
 ```    
-#### array
+> **array**
+
 If you type /:array at the end of the path, the data arriving on the page returns array
+```
+https://example.com/Customers/index/:array
+```
 ```   
-https://.../:array            
-       
-       example : Array(
-                   [db] => Array(
-                     [customers] => Array(
-                       [example_24] => Array(
-                         [example_id] => 24
-                           [example_update_date] => 31-05-2019
-                           [example_hash] => 955a3ca1a08e101ba55d19871ad5144e
-                             )
-                           )
-                   .
-                   .
-                   .
+
+Array(
+     [db] => Array(
+       [customers] => Array(
+         [example_24] => Array(
+         [example_id] => 24
+         [example_update_date] => 31-05-2019
+         [example_hash] => 955a3ca1a08e101ba55d19871ad5144e
+         )
+         .
+         .
+         .
+       )
+     )
    
 ```  
 Each controller extend from Exe_Controller works the same way
