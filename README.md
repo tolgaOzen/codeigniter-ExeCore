@@ -148,7 +148,6 @@ $this->loadLibraries(array('form_validation'))
             
     .
     .
-    .
 ```
 ##### before
 ```
@@ -270,7 +269,6 @@ Array
         )
         .
         .
-        .
 ```
 ##### getSpecialOwnIdArray used function return
 ```php
@@ -293,7 +291,6 @@ Array
         )
         .
         .
-        .
 
 ```
 
@@ -313,10 +310,8 @@ class Customer_Addresses_Model extends Exe_Model
     }
     .
     .
-    .
 ```
 ```php
-    .
     . 
     . 
     public function getCustomerAddressListCaSpecialKeys()
@@ -379,12 +374,25 @@ https://example.com/Customers/index/:json
                  "example_update_date": "31-05-2019",
                  "example_hash": "955a3ca1a08e101ba55d19871ad5144e"
                }
-             },
-             .
-             .
-             .
+             }
+           },
+           "pageDetails" : {
+             "controller": "Customers",
+             "model": "Customers_Model",
+             "view": "customerForm",
+             "method": "see",
+             "params": ["24", ":json"],
+             "queryStrings": [],
+             "localStorage": {
+               "refresh": 0
+             }
+           },                   
+           "userDetails": {
+             "user_id": "3",
+             "user_name": "tolga"
            }
          }
+
 ```    
 > **array**
 
@@ -404,31 +412,48 @@ Array(
          )
          .
          .
-         .
        )
+     )
+     
+     [pageDetails] => Array
+     (
+     .
+     .
+       
+     ) 
+     
+     [userDetails] => Array
+     (
+     .
+     .
+    
      )
    
 ```  
 Each controller extend from Exe_Controller works the same way
 
 #### page details and user details     
-```               
-income on every page : "pageDetails": {
-                           "controller": "Customers",
-                           "model": "Customers_Model",
-                           "view": "customerForm",
-                           "method": "see",
-                           "params": ["24", ":json"],
-                           "queryStrings": [],
-                           "localStorage": {
-                             "refresh": 0
-                         }
-                       },
-                       
-                       "userDetails": {
-                       "user_id": "3",
-                       "user_name": "tolga"
-                       }
+
+>**income on every page**
+```json
+
+     {
+       "pageDetails" : {
+         "controller": "Customers",
+           "model": "Customers_Model",
+           "view": "customerForm",
+           "method": "see",
+           "params": ["24", ":json"],
+           "queryStrings": [],
+           "localStorage": {
+             "refresh": 0
+           }
+       },                   
+       "userDetails": {
+         "user_id": "3",
+         "user_name": "tolga"
+       }
+     }
        
 ```
 
@@ -453,17 +478,16 @@ income on every page : "pageDetails": {
 <img src="https://user-images.githubusercontent.com/39353278/59704030-e1102680-9203-11e9-9f44-12cf89906694.jpg" alt="confetti" width="641" height="568">
 </p>
 
-```
-default is added to the head on each page
 
-If you want to add a special item to the page you can do as in Customers/index
-```
+>default is added to the head on each page
+
+>If you want to add a special item to the page you can do as in Customers/index
 
 ## Author
 
-Tolga Özen
+>Tolga Özen
 
-e-mail : mtolgaozen@gmail.com
+>mtolgaozen@gmail.com
 
 ## License
 
