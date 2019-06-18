@@ -439,7 +439,7 @@ income on every page : "pageDetails": {
 ###### example
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/39353278/59700564-3cd6b180-91fc-11e9-8862-c738487ac15d.jpg" alt="confetti" width="783" height="633">
+<img src="https://user-images.githubusercontent.com/39353278/59704036-e2d9ea00-9203-11e9-94a3-973231293604.jpg" alt="confetti" width="641" height="512">
 </p>
 
 
@@ -450,7 +450,7 @@ income on every page : "pageDetails": {
 ###### example
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/39353278/59700682-8921f180-91fc-11e9-8452-50eddb10046b.jpg" alt="confetti" width="783" height="693">
+<img src="https://user-images.githubusercontent.com/39353278/59704030-e1102680-9203-11e9-9f44-12cf89906694.jpg" alt="confetti" width="641" height="568">
 </p>
 
 ```
