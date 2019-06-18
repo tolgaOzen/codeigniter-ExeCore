@@ -17,9 +17,7 @@ function arrayMd5Hash($data)
     $x = "";
 
     foreach ($data as $c) {
-
         $x .= $c;
-
     }
 
     $hash = md5($x);

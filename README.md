@@ -4,7 +4,6 @@
 #### Use of controller and model core to simplify Codeigniter usage
 
 
-
 ![language](https://img.shields.io/badge/language-php-%238892BF.svg)
 ![GitHub](https://img.shields.io/github/license/tolgaOzen/codeigniter-ExeCore.svg)
 ![GitHub top language](https://img.shields.io/github/languages/top/tolgaOzen/codeigniter-ExeCore.svg)
@@ -42,6 +41,7 @@ installation is over
 
 
 ## usage
+
 ```php
        /*
        |--------------------------------------------------------------------------

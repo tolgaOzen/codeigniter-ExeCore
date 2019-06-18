@@ -104,7 +104,7 @@ class Exe_Model extends CI_Model
     |--------------------------------------------------------------------------
     | @param get table all column and rows
     */
-    public function search($where , $like , $columnProperties = '*')
+    public function search($where, $like, $columnProperties = '*')
     {
         $resultArray = array();
         if ($this->tableName != null) {
@@ -121,7 +121,6 @@ class Exe_Model extends CI_Model
         }
         return $resultArray;
     }
-
 
 
     /*
@@ -161,6 +160,31 @@ class Exe_Model extends CI_Model
         return $rowcount;
     }
 
+    /*
+    |--------------------------------------------------------------------------
+    | getSingularColumnName
+    |--------------------------------------------------------------------------
+    | @param
+    */
+    public function getSingularColumnName($RowName)
+    {
+        $returnString = null;
+        $array = array();
+
+        $splitColumnName = explode("_", $RowName);
+
+        foreach ($splitColumnName as $ColumnName) {
+
+            $singularRowName = singular($ColumnName);
+
+            array_push($array, $singularRowName);
+        }
+
+        $returnString = implode("_", $array);
+
+
+        return $returnString;
+    }
 
     /*
     |--------------------------------------------------------------------------
@@ -248,47 +272,6 @@ class Exe_Model extends CI_Model
             return false;
 
         }
-
-    }
-
-
-    // istedigin rowun key ini ve valuesunu ver
-    public function getRow($value, $limit = null, $columnKey = "_id")
-    {
-
-        $result = null;
-
-        $column = $this->tableName . $columnKey;
-
-        $columnName = $this->getSingularColumnName($column);
-
-        $condition = "{$columnName} ='{$value}' ";
-
-        $this->db->select("*");
-        $this->db->from($this->tableName);
-        $this->db->where($condition);
-
-        if ($limit != null) {
-            $this->db->limit($limit);
-        }
-
-        $query = $this->db->get();
-
-        if ($query->num_rows() != 0) {
-
-            $result = $query->result_array();
-
-            if ($limit == 1) {
-
-                return $result[0];
-
-            }
-
-            return $result;
-
-        }
-
-        return $result;
 
     }
 
