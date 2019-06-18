@@ -1,10 +1,11 @@
 
 #codeigniter-ExeCore
 
+---
+---
+---
 
 #### Use of controller and model core to simplify Codeigniter usage
-
----
 
 
 ![language](https://img.shields.io/badge/language-php-%238892BF.svg)
@@ -357,7 +358,7 @@ Array
 
 ### data type logic
 
-> **json**
+> ####json
 
 If you type /:json at the end of the path, the data arriving on the page returns json
 
@@ -394,7 +395,8 @@ https://example.com/Customers/index/:json
          }
 
 ```    
-> **array**
+
+> ####array
 
 If you type /:array at the end of the path, the data arriving on the page returns array
 ```
