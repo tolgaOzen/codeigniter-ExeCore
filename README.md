@@ -1,8 +1,9 @@
 
-#codeigniter-ExeCore
+# codeigniter-ExeCore
 
 #### Use of controller and model core to simplify Codeigniter usage
 
+---
 
 ![language](https://img.shields.io/badge/language-php-%238892BF.svg)
 ![GitHub](https://img.shields.io/github/license/tolgaOzen/codeigniter-ExeCore.svg)
