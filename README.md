@@ -488,6 +488,10 @@ Each controller extend from Exe_Controller works the same way
 <img src="https://user-images.githubusercontent.com/39353278/59704036-e2d9ea00-9203-11e9-94a3-973231293604.jpg" alt="confetti" width="641" height="512">
 </p>
 
+as you can see in the example, we can manage menu s properties here
+
+>knows the page according to the controller name and activates the item in menu. Sample Customers
+
 
 ### Html Head 
 
