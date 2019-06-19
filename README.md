@@ -146,7 +146,8 @@ $this->loadLibraries(array('form_validation'))
 ### readyToUpdate and readyToInsert functions
 
 
-####usage example
+#### usage example
+
 ```php
  if (isPost()) {
 
