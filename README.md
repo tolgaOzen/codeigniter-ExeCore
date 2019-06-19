@@ -495,7 +495,7 @@ as you can see in the example, we can manage menu s properties here
 
 ### Html Head 
 
-#### menu is created in the Menu_Model
+#### heads are created in the HtmlItems_Model
 
 ###### example
 
